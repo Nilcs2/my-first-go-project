@@ -10,7 +10,7 @@ import (
 
 func main() {
 	app := &cli.App{
-		Action: func(cCtx *cli.context) error {
+		Action: func(cCtx *cli.Context) error {
 			fmt.Println("Hello %q", cCtx.Args().Get(0))
 			return nil
 		},
